@@ -1,0 +1,9 @@
+# Venv
+lib/
+include/
+lib64
+bin
+pyvenv.cfg
+
+# Python
+__pycacahe__
