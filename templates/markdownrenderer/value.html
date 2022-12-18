@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>Render Finished - Useful Web Apps</title>
+	</head>
+	<body>
+		<a href='#rendered'>Click to view rendered file</a>
+		<p>render from:</p>
+		<pre><code>
+			{{ renderfile }}
+		</code></pre>
+		<hr></hr>
+		<a name='rendered'></a>
+		{{ renderresult | safe }}
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Markdown Renderer - Useful Web Apps</title>
+	</head>
+	<body>
+		<h1>Markdown Renderer</h1>
+		<p>For markdown format, refer: <a href="markdown.com">Markdown</a></p>
+		<form action='/markdownrenderer/value' method='post' autocomplete='on' enctype="multipart/form-data">
+			Markdown content:</br>
+			<textarea name='markdown' rows="3" cols="20" placeholder='Input markdown here...'></textarea>
+			<br></br>
+			or upload file:<br></br>
+			<input name='file-upload' type='file'></input><br></br>
+			You used:
+			<br></br>
+			<input type='radio' name='uploadmethod' value='text'></input>Text<br></br>
+			<input type='radio' name='uploadmethod' value='file'></input>File<br></br>
+			<input type='submit' value='Render'></input>
+		</form>
+	</body>
+</html>
