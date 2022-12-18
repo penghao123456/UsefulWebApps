@@ -6,7 +6,7 @@ BRANCH=$(shell git branch | grep -E "^\* .+" -o | grep -E "[^* ]+" -o)
 
 commit:* .gitignore
 	-$(GIT) $(ADD) $^ .gitignore
-	$(GIT) $(COMMIT)
+	-$(GIT) $(COMMIT)
 
 push:commit
 	$(GIT) $(PUSH) origin $(BRANCH)
