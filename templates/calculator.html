@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Calculator - Useful Web Apps</title>
+	</head>
+	<body>
+		<h1>Calculator</h1>
+		<p>Expression format:</p>
+		<ul>
+			<li>Addition using <code>+</code>, subtraction using <code>-</code>;</li>
+			<li>Muitiple using <code>*</code>, division using <code>/</code>;</li>
+			<li>Power using <code>**</code></li>
+		</ul>
+		<form method="post">
+			Expression:
+			<input type="input" name="exp">
+			<input type="submit" value="Calculate">
+		</form>
+		{% if perexp %}
+		<p>{{ perexp }} = {{ pervalue }} <p>
+		{% endif %}
+	</body>
+</html>
